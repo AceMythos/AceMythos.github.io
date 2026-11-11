@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Vishwanath Sanapur — Linux &amp; systems troubleshooting</title>
+  <meta name="description" content="Final-year Computer Science student in Bengaluru. Linux internals, kernel-level debugging, and two apps published to the COSMIC Store." />
+  <meta name="theme-color" content="#0B0C0E" />
+
+  <meta property="og:title" content="Vishwanath Sanapur — Linux &amp; systems troubleshooting" />
+  <meta property="og:description" content="Final-year CSE student in Bengaluru. Two years in Linux internals, two apps on the COSMIC Store." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://cdn.jsdelivr.net" crossorigin />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/instrument-sans/index.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fontsource-variable/jetbrains-mono/index.css" />
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <a class="skip" href="#main">Skip to content</a>
+
+  <header class="nav">
+    <div class="nav__inner">
+      <a class="nav__mark" href="#top" aria-label="Vishwanath Sanapur, back to top">
+        <span class="nav__dot" aria-hidden="true"></span>
+        Vishwanath Sanapur
+      </a>
+      <nav class="nav__links" aria-label="Sections">
+        <a href="#work">Work</a>
+        <a href="#stack">Stack</a>
+        <a href="#background">Background</a>
+        <a class="nav__cta" href="#contact">Contact</a>
+      </nav>
+      <button class="theme" id="themeToggle" type="button" aria-label="Switch theme" aria-pressed="false">
+        <span class="theme__icon" aria-hidden="true"></span>
+      </button>
+    </div>
+  </header>
+
+  <main id="main">
+
+    <!-- HERO -->
+    <section class="hero" id="top">
+      <div class="hero__grid">
+        <div class="hero__copy">
+          <h1>Vishwanath<br />Sanapur</h1>
+          <p class="hero__sub">
+            Final-year Computer Science student, Bengaluru. B.E. CSE at VTU, 2027,
+            CGPA 8.0/10. I write Linux desktop software in Rust and troubleshoot
+            the systems I run it on.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--primary" href="assets/Vishwanath_Sanapur_Resume.pdf" download>Download resume</a>
+            <a class="btn btn--ghost" href="https://github.com/AceMythos" target="_blank" rel="noopener">GitHub</a>
+          </div>
+          <p class="hero__avail">
+            <span class="pulse" aria-hidden="true"></span>
+            Available for a 3–6 month internship from January 2027
+          </p>
+        </div>
+
+        <!-- Real data, not a screenshot -->
+        <figure class="chart" aria-labelledby="chartCap">
+          <div class="chart__head">
+            <span class="chart__label">commits per public repo</span>
+            <span class="chart__src">github.com/AceMythos</span>
+          </div>
+          <ul class="chart__bars">
+            <li>
+              <span class="chart__name">cosmic-connect</span>
+              <span class="chart__track"><span class="chart__fill" style="--v: 100%"></span></span>
+              <span class="chart__val">122</span>
+            </li>
+            <li>
+              <span class="chart__name">cosmic-power-monitor</span>
+              <span class="chart__track"><span class="chart__fill" style="--v: 73%"></span></span>
+              <span class="chart__val">89</span>
+            </li>
+            <li>
+              <span class="chart__name">ClipManager</span>
+              <span class="chart__track"><span class="chart__fill" style="--v: 24%"></span></span>
+              <span class="chart__val">29</span>
+            </li>
+            <li>
+              <span class="chart__name">hp-cosmic-charge-limit</span>
+              <span class="chart__track"><span class="chart__fill" style="--v: 5%"></span></span>
+              <span class="chart__val">6</span>
+            </li>
+          </ul>
+          <figcaption id="chartCap" class="chart__cap">
+            Counted from the GitHub API. Two of these ship on the COSMIC Store under MIT.
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- PROOF -->
+    <section class="stats" aria-label="Selected numbers">
+      <div class="stats__item">
+        <span class="stats__num">211</span>
+        <span class="stats__lbl">commits written</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num">15</span>
+        <span class="stats__lbl">tagged releases</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num">2</span>
+        <span class="stats__lbl">apps on COSMIC Store</span>
+      </div>
+      <div class="stats__item">
+        <span class="stats__num">8.0</span>
+        <span class="stats__lbl">CGPA / 10</span>
+      </div>
+    </section>
+
+    <!-- WORK -->
+    <section class="work" id="work">
+      <div class="sec__head">
+        <h2>Work</h2>
+        <p class="sec__note">Five repositories. All public, all commit history intact.</p>
+      </div>
+
+      <div class="grid">
+        <article class="card card--wide">
+          <div class="card__media" style="--shot: url('assets/connect.jpg')">
+            <img src="assets/connect.jpg" width="353" height="681" loading="lazy"
+                 alt="COSMIC Connect panel popup showing paired devices and file transfer controls" />
+          </div>
+          <div class="card__top">
+            <h3>COSMIC Connect</h3>
+            <span class="card__meta">Rust · D-Bus</span>
+          </div>
+          <p>
+            KDE Connect wired into the COSMIC panel: pairing, file and text sharing,
+            SFTP browsing, clipboard sync, battery status. Ships a patched KDE Connect
+            fork that adds four D-Bus signals for live transfer progress.
+          </p>
+          <ul class="tags">
+            <li>122 commits</li><li>5 stars</li><li>Rust</li>
+          </ul>
+          <a class="card__link" href="https://github.com/AceMythos/cosmic-connect" target="_blank" rel="noopener">View repository<span aria-hidden="true"> →</span></a>
+        </article>
+
+        <article class="card card--wide">
+          <div class="card__media" style="--shot: url('assets/power-monitor.png')">
+            <img src="assets/power-monitor.png" width="388" height="616" loading="lazy"
+                 alt="COSMIC Power Monitor showing live battery charge wattage in the panel" />
+          </div>
+          <div class="card__top">
+            <h3>COSMIC Power Monitor</h3>
+            <span class="card__meta">Rust · Linux</span>
+          </div>
+          <p>
+            Live battery charge and discharge power in watts. Reads kernel data from
+            <code>/sys/class/power_supply</code> four times a second and falls back to
+            current × voltage when the kernel exposes no direct reading.
+          </p>
+          <ul class="tags">
+            <li>89 commits</li><li>9 releases</li><li>MIT</li>
+          </ul>
+          <a class="card__link" href="https://github.com/AceMythos/cosmic-power-monitor" target="_blank" rel="noopener">View repository<span aria-hidden="true"> →</span></a>
+        </article>
+
+        <article class="card card--wide">
+          <div class="card__media" style="--shot: url('assets/speed-monitor.png')">
+            <img src="assets/speed-monitor.png" width="386" height="892" loading="lazy"
+                 alt="Internet Speed Monitor showing a monthly data usage summary in the COSMIC panel" />
+          </div>
+          <div class="card__top">
+            <h3>Internet Speed Monitor</h3>
+            <span class="card__meta">Rust · GPL-3.0</span>
+          </div>
+          <p>
+            Panel applet for live internet speed and monthly data usage. Reads interface
+            counters through Rust and renders them in libcosmic, with connection details
+            and a running monthly total.
+          </p>
+          <ul class="tags">
+            <li>32 commits</li><li>2 stars</li><li>libcosmic</li>
+          </ul>
+          <a class="card__link" href="https://github.com/AceMythos/cosmic-internet-speed-monitor" target="_blank" rel="noopener">View repository<span aria-hidden="true"> →</span></a>
+        </article>
+
+        <article class="card card--wide">
+          <div class="card__media" style="--shot: url('assets/popup.png')">
+            <img src="assets/popup.png" width="576" height="655" loading="lazy"
+                 alt="COSMIC clipboard manager showing a list of clipboard items" />
+          </div>
+          <div class="card__top">
+            <h3>ClipManager</h3>
+            <span class="card__meta">Rust</span>
+          </div>
+          <p>Clipboard history with search, pin-to-top, private mode, and a 48-hour clear that spares pinned entries.</p>
+          <a class="card__link" href="https://github.com/AceMythos/ClipManager" target="_blank" rel="noopener">View repository<span aria-hidden="true"> →</span></a>
+        </article>
+
+        <article class="card">
+          <div class="card__top">
+            <h3>hp-cosmic-charge-limit</h3>
+            <span class="card__meta">Rust</span>
+          </div>
+          <p>Battery charge limiter that surfaces the HP embedded-controller threshold as a panel applet.</p>
+          <a class="card__link" href="https://github.com/AceMythos/hp-cosmic-charge-limit" target="_blank" rel="noopener">View repository<span aria-hidden="true"> →</span></a>
+        </article>
+      </div>
+    </section>
+
+    <!-- STACK -->
+    <section class="stack" id="stack">
+      <div class="sec__head">
+        <h2>Stack</h2>
+        <p class="sec__note">Used in the projects above.</p>
+      </div>
+
+      <div class="stack__grid">
+        <div class="stack__col">
+          <h3>Systems &amp; troubleshooting</h3>
+          <ul class="plain">
+            <li>Linux command-line administration</li>
+            <li>systemd services, D-Bus, <code>/sys</code></li>
+            <li>Kernel- and driver-level debugging</li>
+            <li>Log analysis to root cause</li>
+            <li>Package and dependency resolution</li>
+          </ul>
+        </div>
+        <div class="stack__col">
+          <h3>Networking</h3>
+          <ul class="plain">
+            <li>TCP/IP, DNS, DHCP, HTTP</li>
+            <li>SSH and remote access</li>
+            <li>Packet capture and analysis (Wireshark)</li>
+            <li>Connectivity fault isolation</li>
+            <li>Dual-boot and multi-distro setups</li>
+          </ul>
+        </div>
+        <div class="stack__col">
+          <h3>Languages &amp; tools</h3>
+          <ul class="plain">
+            <li>Rust, Python, Shell, JavaScript</li>
+            <li>Kotlin (Android port work)</li>
+            <li>Git, GitHub, VS Code</li>
+            <li>Jupyter Notebook</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- BACKGROUND -->
+    <section class="bg" id="background">
+      <div class="sec__head">
+        <h2>Background</h2>
+        <p class="sec__note">Degree, two training programmes, two certificates.</p>
+      </div>
+
+      <div class="bg__grid">
+        <div class="bg__main">
+          <div class="entry">
+            <div class="entry__row">
+              <h3>B.E. Computer Science &amp; Engineering</h3>
+              <span class="entry__date">2023 — 2027</span>
+            </div>
+            <p class="entry__sub">
+              Government Sri Krishnarajendra Silver Jubilee Technological Institute (SKSJTI),
+              VTU · Bengaluru · 7th semester · CGPA 8.0/10
+            </p>
+          </div>
+
+          <div class="entry">
+            <div class="entry__row">
+              <h3>Ethical Hacking with AI</h3>
+              <span class="entry__date">Aug — Sep 2025</span>
+            </div>
+            <p class="entry__sub">
+              Internshala Trainings · VAPT methodology, OWASP Top 10, network protocols,
+              web and mobile attack vectors · scored 84%
+            </p>
+          </div>
+
+          <div class="entry">
+            <div class="entry__row">
+              <h3>Artificial Intelligence &amp; Cloud Technology</h3>
+              <span class="entry__date">Sep — Oct 2025</span>
+            </div>
+            <p class="entry__sub">
+              Edunet Foundation, AICTE-certified · core AI concepts and cloud deployment workflows
+            </p>
+          </div>
+        </div>
+
+        <aside class="bg__side">
+          <h3 class="bg__sideTitle">Certifications</h3>
+          <ul class="cert">
+            <li>
+              <span class="cert__name">Cyber Security 101</span>
+              <span class="cert__meta">TryHackMe · 45h 23m · May 2026</span>
+            </li>
+            <li>
+              <span class="cert__name">Pre Security</span>
+              <span class="cert__meta">TryHackMe · 19h 10m · Mar 2026</span>
+            </li>
+          </ul>
+          <p class="bg__sideNote">
+            Both completed end to end, not sampled. Hours are from the platform's own tracker.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact" id="contact">
+      <h2>Contact</h2>
+      <p class="contact__sub">
+        Bengaluru. Free for a 3–6 month internship from January 2027.
+      </p>
+      <a class="contact__mail" href="mailto:vishwanathsanapur08@gmail.com">vishwanathsanapur08@gmail.com</a>
+      <div class="contact__links">
+        <a href="https://github.com/AceMythos" target="_blank" rel="noopener">GitHub</a>
+        <a href="https://linkedin.com/in/vishwanathsanapur" target="_blank" rel="noopener">LinkedIn</a>
+        <a href="tel:+919742513344">+91 97425 13344</a>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="foot">
+    <span>Vishwanath Sanapur · Bengaluru</span>
+    <a href="https://github.com/AceMythos" target="_blank" rel="noopener">github.com/AceMythos</a>
+  </footer>
+
+  <script src="main.js" defer></script>
+</body>
+</html>
