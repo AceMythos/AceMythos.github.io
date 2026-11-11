@@ -38,6 +38,20 @@
     });
   }
 
+  /* ---- liquid glass on the sticky nav ---- */
+  var nav = document.querySelector(".nav");
+  var reduceTransparency = window.matchMedia("(prefers-reduced-transparency: reduce)");
+
+  if (nav && window.liquidGlass && !reduceTransparency.matches && window.innerWidth > 720) {
+    window.liquidGlass(nav, {
+      scale: -72,
+      chroma: 4,
+      blur: 2,
+      saturate: 1.4,
+      radius: 0
+    });
+  }
+
   /* ---- scroll reveal ---- */
   var targets = document.querySelectorAll(".card, .entry, .chart, .stack__col, .bg__side");
   targets.forEach(function (el) {
