@@ -36,23 +36,19 @@ No invented metrics. If you cannot verify a number, do not add it.
 - **Colours** — top of `styles.css`. One accent only (`--accent`). Dark and light are both defined; dark is the default.
 - **Theme** — the toggle stores the choice in `localStorage` under `vs-theme`.
 
-## Deploy to GitHub Pages
+## Live
+
+**https://acemythos.github.io/** — served from `github.com/AceMythos/AceMythos.github.io`, branch `master`, root folder.
+
+Deployed, not pending. Pushing to `master` redeploys automatically in about a minute:
 
 ```bash
-cd portfolio
-git init
-git add .
-git commit -m "portfolio"
-git branch -M main
-git remote add origin https://github.com/AceMythos/portfolio.git
-git push -u origin main
+git add -A
+git commit -m "update"
+git push
 ```
 
-Then: repository **Settings → Pages → Source: Deploy from a branch → main → / (root)**.
-
-Live in about a minute at `https://acemythos.github.io/portfolio/`.
-
-For a custom domain or root-level hosting (Netlify, Vercel, Cloudflare Pages), just drag the folder in — it is static HTML.
+For a custom domain, add it under **Settings → Pages**. Root-level hosting elsewhere (Netlify, Vercel, Cloudflare Pages) also works — the folder is static HTML.
 
 ## Known gaps
 
